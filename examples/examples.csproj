@@ -99,6 +99,9 @@
     <Compile Include="Button.xaml.cs">
       <DependentUpon>Button.xaml</DependentUpon>
     </Compile>
+    <Compile Include="CheckBoxPage.xaml.cs">
+      <DependentUpon>CheckBoxPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="HyperlinkButtonPage.xaml.cs">
       <DependentUpon>HyperlinkButtonPage.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Button.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CheckBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

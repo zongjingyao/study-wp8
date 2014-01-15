@@ -1,0 +1,41 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="examples.CheckBoxPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot 是包含所有页面内容的根网格-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel 包含应用程序的名称和页标题-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="实例" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="CheckBox" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - 在此处放置其他内容-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <!--一个CheckBox控件-->
+            <CheckBox Name="checkBox1" Foreground="Orange" Content="Check Me" FontFamily="Georgia" FontSize="20" FontWeight="Bold" Margin="0,6,0,527" />
+            <!--添加了选中和不选中的处理事件-->
+            <CheckBox Name="checkBox2" 
+                Content="Check Me" 
+                IsChecked="True" 
+                Checked="checkBox_Checked" Unchecked="checkBox_Unchecked" Margin="0,75,0,441"/>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>
