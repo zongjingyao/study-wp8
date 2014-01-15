@@ -50,6 +50,7 @@
             <Button Content="按钮(Button)" Name="btnToButton" HorizontalAlignment="Center" Margin="100,10,100,0" VerticalAlignment="Top" Click="btnToButton_Click" Width="231"/>
             <Button Content="文本块(TextBlock)" Name="btnToTextBlock" HorizontalAlignment="Center" Margin="100,80,100,0" VerticalAlignment="Top" Click="btnToTextBlock_Click" />
             <Button Content="文本框(TextBox)" Name="btnToTextBox" HorizontalAlignment="Center" Margin="113,150,112,0" VerticalAlignment="Top" Width="231" Click="btnToTextBox_Click" />
+            <Button Content="边框(Border)" Name="btnToBorder" HorizontalAlignment="Center" Margin="112,220,112,0" VerticalAlignment="Top" Width="232" Click="btnToBorder_Click" />
 
 
         </Grid>
