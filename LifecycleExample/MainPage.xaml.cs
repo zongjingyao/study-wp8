@@ -41,7 +41,7 @@ namespace LifecycleExample
         protected override void OnNavigatedFrom(NavigationEventArgs e)
         {
             base.OnNavigatedFrom(e);
-            //if(e.NavigationMode != NavigationMode.Back && e.NavigationMode != NavigationMode.Forward)
+            if(e.NavigationMode != NavigationMode.Back && e.NavigationMode != NavigationMode.Forward)
             {
                 PhoneApplicationService.Current.State["log"] = tbkLog.Text;
             }
