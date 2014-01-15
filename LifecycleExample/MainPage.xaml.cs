@@ -38,6 +38,22 @@ namespace LifecycleExample
         //    ApplicationBar.MenuItems.Add(appBarMenuItem);
         //}
 
-        
+        protected override void OnNavigatedFrom(NavigationEventArgs e)
+        {
+            base.OnNavigatedFrom(e);
+            //if(e.NavigationMode != NavigationMode.Back && e.NavigationMode != NavigationMode.Forward)
+            {
+                PhoneApplicationService.Current.State["log"] = tbkLog.Text;
+            }
+        }
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            if (PhoneApplicationService.Current.State.ContainsKey("log"))
+            {
+                tbkLog.Text = (string)PhoneApplicationService.Current.State["log"];
+            }
+        }
     }
 }

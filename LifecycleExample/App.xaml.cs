@@ -62,7 +62,7 @@ namespace LifecycleExample
         private void Application_Launching(object sender, LaunchingEventArgs e)
         {
             Debug.WriteLine("应用程序启动...");
-            PhoneApplicationService.Current.State["log"] += "应用程序启动...\n";
+            PhoneApplicationService.Current.State["log"] = "应用程序启动...\n";
         }
 
         // 激活应用程序(置于前台)时执行的代码
