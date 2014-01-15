@@ -47,12 +47,13 @@
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-            <Button Content="按钮(Button)" Name="btnToButton" HorizontalAlignment="Center" Margin="124,57,121,0" VerticalAlignment="Top" Click="btnToButton_Click"/>
-            
-        
-        
+            <Button Content="按钮(Button)" Name="btnToButton" HorizontalAlignment="Center" Margin="128,57,97,0" VerticalAlignment="Top" Click="btnToButton_Click" Width="231"/>
+            <Button Content="文本块(TextBlock)" Name="btnToTextBlock" HorizontalAlignment="Center" Margin="128,165,97,0" VerticalAlignment="Top" Click="btnToTextBlock_Click" />
+
+
+
         </Grid>
-        
+
 
         <!--取消注释，以显示对齐网格，从而帮助确保
             控件在公用边界上对齐。图像在系统栏中显示时的
