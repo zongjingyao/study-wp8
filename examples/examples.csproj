@@ -121,6 +121,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="ScrollViewerPage.xaml.cs">
+      <DependentUpon>ScrollViewerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TextBlockPage.xaml.cs">
       <DependentUpon>TextBlockPage.xaml</DependentUpon>
     </Compile>
@@ -161,6 +164,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ScrollViewerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="TextBlockPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -177,6 +184,7 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="a.jpg" />
     <Content Include="Assets\AlignmentGrid.png" />
     <Content Include="Assets\ApplicationIcon.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -196,6 +204,9 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="b.jpg" />
+    <Content Include="c.jpg" />
+    <Content Include="d.jpg" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">
