@@ -54,7 +54,7 @@
             <Button Content="超链接" Name="btnToHyperlinkButton" HorizontalAlignment="Center" Margin="112,290,112,0" VerticalAlignment="Top" Width="232" Click="btnToHyperlinkButton_Click" />
             <Button Content="单选按钮" Name="btnToRadioButton" HorizontalAlignment="Center" Margin="113,360,112,0" VerticalAlignment="Top" Width="231" Click="btnToRadioButton_Click" />
             <Button Content="复选框" Name="btnToCheckBox" HorizontalAlignment="Center" Margin="113,430,112,0" VerticalAlignment="Top" Width="231" Click="btnToCheckBox_Click" />
-            
+            <Button Content="进度条" Name="btnToProgressBar" HorizontalAlignment="Center" Margin="113,500,112,0" VerticalAlignment="Top" Width="231" Click="btnToProgressBar_Click" />
             
             
         </Grid>

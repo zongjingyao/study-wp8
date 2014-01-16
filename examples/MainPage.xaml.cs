@@ -57,6 +57,11 @@ namespace examples
             NavigationService.Navigate(new Uri("/CheckBoxPage.xaml", UriKind.Relative));
         }
 
+        private void btnToProgressBar_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/ProgressBarPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
