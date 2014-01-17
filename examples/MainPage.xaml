@@ -60,6 +60,8 @@
                         <Button Content="进度条" Name="btnToProgressBar" HorizontalAlignment="Center" Width="231" Click="btnToProgressBar_Click" />
                         <Button Content="滚动区域" Name="btnToScrollViewer" HorizontalAlignment="Center" Width="231" Click="btnToScrollViewer_Click" />
                         <Button Content="列表框" Name="btnToListBox" HorizontalAlignment="Center" Width="231" Click="btnToListBox_Click"/>
+                        <Button Content="滑动条" Name="btnToSliderPage" HorizontalAlignment="Center" Width="231" Click="btnToSliderPage_Click"/>
+                        
                     </StackPanel>
                 </ScrollViewer.Content>
             </ScrollViewer>

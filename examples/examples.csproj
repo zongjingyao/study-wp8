@@ -129,6 +129,9 @@
     <Compile Include="ScrollViewerPage.xaml.cs">
       <DependentUpon>ScrollViewerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="SliderPage.xaml.cs">
+      <DependentUpon>SliderPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="TextBlockPage.xaml.cs">
       <DependentUpon>TextBlockPage.xaml</DependentUpon>
     </Compile>
@@ -174,6 +177,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ScrollViewerPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SliderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
