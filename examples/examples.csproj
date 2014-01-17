@@ -102,8 +102,13 @@
     <Compile Include="CheckBoxPage.xaml.cs">
       <DependentUpon>CheckBoxPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Customer.cs" />
+    <Compile Include="Customers.cs" />
     <Compile Include="HyperlinkButtonPage.xaml.cs">
       <DependentUpon>HyperlinkButtonPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListBoxPage.xaml.cs">
+      <DependentUpon>ListBoxPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
@@ -149,6 +154,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="HyperlinkButtonPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListBoxPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
