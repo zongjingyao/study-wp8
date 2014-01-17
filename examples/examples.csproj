@@ -93,6 +93,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ApplicationBarPage.xaml.cs">
+      <DependentUpon>ApplicationBarPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="BorderPage.xaml.cs">
       <DependentUpon>BorderPage.xaml</DependentUpon>
     </Compile>
@@ -144,6 +147,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
+    <Page Include="ApplicationBarPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="BorderPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -223,6 +230,9 @@
     <Content Include="b.jpg" />
     <Content Include="c.jpg" />
     <Content Include="d.jpg" />
+    <Content Include="icon\about.png" />
+    <Content Include="icon\ie.png" />
+    <Content Include="icon\phone.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">

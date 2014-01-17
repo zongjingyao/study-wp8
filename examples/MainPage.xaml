@@ -61,7 +61,7 @@
                         <Button Content="滚动区域" Name="btnToScrollViewer" HorizontalAlignment="Center" Width="231" Click="btnToScrollViewer_Click" />
                         <Button Content="列表框" Name="btnToListBox" HorizontalAlignment="Center" Width="231" Click="btnToListBox_Click"/>
                         <Button Content="滑动条" Name="btnToSliderPage" HorizontalAlignment="Center" Width="231" Click="btnToSliderPage_Click"/>
-                        
+                        <Button Content="菜单栏" Name="btnToApplicationBar" HorizontalAlignment="Center" Width="231" Click="btnToApplicationBar_Click"/>
                     </StackPanel>
                 </ScrollViewer.Content>
             </ScrollViewer>
