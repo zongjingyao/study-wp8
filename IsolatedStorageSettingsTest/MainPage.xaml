@@ -41,13 +41,21 @@
 
         <!--TitlePanel 包含应用程序的名称和页标题-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="我的应用程序" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="页面名称" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="IsolatedStorageSettings" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="测试" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="30,42,0,0" Text="Key" VerticalAlignment="Top" />
+            <TextBox Height="72" HorizontalAlignment="Left" Margin="169,24,0,0" Name="tbKey" Text="" VerticalAlignment="Top" Width="212" />
+            <TextBox Height="74" HorizontalAlignment="Left" Margin="169,106,0,0" Name="tbValue" Text="" VerticalAlignment="Top" Width="212" />
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="12,131,0,0" Text="Value" VerticalAlignment="Top" />
+            <Button Content="保存" Height="70" HorizontalAlignment="Left" Margin="0,255,0,0" Name="btnSave" VerticalAlignment="Top" Width="160" Click="btnSave_Click" />
+            <Button Content="删除" Height="70" HorizontalAlignment="Left" Margin="150,255,0,0" Name="btnDelete" VerticalAlignment="Top" Width="160" Click="btnDelete_Click" />
+            <Button Content="清空所有" Height="72" HorizontalAlignment="Left" Margin="308,255,0,0" Name="deleteall" VerticalAlignment="Top" Width="160" Click="deleteall_Click" />
+            <TextBlock Height="39" HorizontalAlignment="Left" Margin="94,347,0,0" Text="Keys列表" VerticalAlignment="Top" />
+            <ListBox Height="168" HorizontalAlignment="Left" Margin="94,392,0,0" Name="lstKeys" VerticalAlignment="Top" Width="274" BorderThickness="1" SelectionChanged="lstKeys_SelectionChanged" />         
         </Grid>
 
         <!--取消注释，以显示对齐网格，从而帮助确保
