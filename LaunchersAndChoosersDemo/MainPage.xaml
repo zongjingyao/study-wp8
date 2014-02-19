@@ -52,6 +52,7 @@
                     <Button x:Name="btnEamilComposeTask" Content="发邮件" FontSize="36" Click="btnEamilComposeTask_Click"/>
                     <Button x:Name="btnPhoneCallTask" Content="打电话" FontSize="36" Click="btnPhoneCallTaskk_Click"/>
                     <Button x:Name="btnSearchTask" Content="搜索" FontSize="36" Click="btnSearchTask_Click"/>
+                    <Button x:Name="btnSmsComposeTask" Content="发送短信" FontSize="36" Click="btnSmsComposeTask_Click"/>
                 </StackPanel>
             </ScrollViewer>       
         </Grid>

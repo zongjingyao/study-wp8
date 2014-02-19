@@ -37,6 +37,11 @@ namespace LaunchersAndChoosersDemo
             NavigationService.Navigate(new Uri("/SearchTaskPage.xaml", UriKind.Relative));
         }
 
+        private void btnSmsComposeTask_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/SmsComposeTaskPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
