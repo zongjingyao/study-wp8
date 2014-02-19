@@ -47,6 +47,11 @@ namespace LaunchersAndChoosersDemo
             NavigationService.Navigate(new Uri("/WebBrowserTaskPage.xaml", UriKind.Relative));
         }
 
+        private void btnMediaPlayerLanucherTask_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MediaPlayerLanucherPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
