@@ -51,6 +51,7 @@
                     <TextBlock Text="启动器" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="72"   />
                     <Button x:Name="btnEamilComposeTask" Content="发邮件" FontSize="36" Click="btnEamilComposeTask_Click"/>
                     
+                    
                 </StackPanel>
             </ScrollViewer>       
         </Grid>
