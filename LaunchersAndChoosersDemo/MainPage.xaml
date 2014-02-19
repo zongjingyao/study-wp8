@@ -41,14 +41,20 @@
 
         <!--TitlePanel 包含应用程序的名称和页标题-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="我的应用程序" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="页面名称" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="LaunchersAndChoosersDemo" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/> 
         </StackPanel>
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <ScrollViewer Margin="0" Grid.Row="1">
+                <StackPanel>
+                    <TextBlock Text="启动器" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="72"   />
+                    <Button x:Name="btnEamilComposeTask" Content="发邮件" FontSize="36" Click="btnEamilComposeTask_Click"/>
+                    
+                </StackPanel>
+            </ScrollViewer>       
         </Grid>
+        
 
         <!--取消注释，以显示对齐网格，从而帮助确保
             控件在公用边界上对齐。图像在系统栏中显示时的
