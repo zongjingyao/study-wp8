@@ -57,7 +57,7 @@
                     <Button x:Name="btnMediaPlayerLanucherTask" Content="多媒体启动器" FontSize="36" Click="btnMediaPlayerLanucherTask_Click"/>
                     <Button x:Name="btnMarketPlaceDetailTask" Content="应用详细查看" FontSize="36" Click="btnMarketPlaceDetailTask_Click"/>
                     <Button x:Name="btnMarketPlaceHubTask" Content="应用市场" FontSize="36" Click="btnMarketPlaceHubTask_Click"/>
-                    
+                    <Button x:Name="btnMarketPlaceReviewTask" Content="应用详细" FontSize="36" Click="btnMarketPlaceReviewTask_Click"/>
                     
                     
                     

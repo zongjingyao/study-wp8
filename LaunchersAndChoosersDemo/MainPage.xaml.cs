@@ -62,6 +62,11 @@ namespace LaunchersAndChoosersDemo
             NavigationService.Navigate(new Uri("/MarketPlaceHubTaskPage.xaml", UriKind.Relative));
         }
 
+        private void btnMarketPlaceReviewTask_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/MarketPlaceReviewTaskPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
