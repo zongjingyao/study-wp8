@@ -60,7 +60,7 @@
                     <Button x:Name="btnMarketPlaceReviewTask" Content="应用详细" FontSize="36" Click="btnMarketPlaceReviewTask_Click"/>
                     <Button x:Name="btnMarketPlaceSearchTask" Content="应用市场搜索" FontSize="36" Click="btnMarketPlaceSearchTask_Click"/>
                     <Button x:Name="btnMapsTask" Content="诺基亚地图" FontSize="36" Click="btnMapsTask_Click"/>
-                    
+                    <Button x:Name="btnConnectionSettingTask" Content="连接设置" FontSize="36" Click="btnConnectionSettingTask_Click"/>
                     
                     
                     
