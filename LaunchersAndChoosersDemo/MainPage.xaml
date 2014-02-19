@@ -55,8 +55,8 @@
                     <Button x:Name="btnSmsComposeTask" Content="发送短信" FontSize="36" Click="btnSmsComposeTask_Click"/>
                     <Button x:Name="btnWebBrowserTask" Content="启动浏览器" FontSize="36" Click="btnWebBrowserTask_Click"/>
                     <Button x:Name="btnMediaPlayerLanucherTask" Content="多媒体启动器" FontSize="36" Click="btnMediaPlayerLanucherTask_Click"/>
-
-
+                    <Button x:Name="btnMarketPlaceDetailTask" Content="应用详细查看" FontSize="36" Click="btnMarketPlaceDetailTask_Click"/>
+                    
                 </StackPanel>
             </ScrollViewer>       
         </Grid>

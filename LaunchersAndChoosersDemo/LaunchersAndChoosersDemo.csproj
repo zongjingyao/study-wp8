@@ -100,6 +100,9 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="MarketPlaceDetailTaskPage.xaml.cs">
+      <DependentUpon>MarketPlaceDetailTaskPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="MediaPlayerLanucherPage.xaml.cs">
       <DependentUpon>MediaPlayerLanucherPage.xaml</DependentUpon>
     </Compile>
@@ -132,6 +135,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MarketPlaceDetailTaskPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
