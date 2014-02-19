@@ -133,6 +133,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
+    <Compile Include="SavePhoneNumberTaskPage.xaml.cs">
+      <DependentUpon>SavePhoneNumberTaskPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="SearchTaskPage.xaml.cs">
       <DependentUpon>SearchTaskPage.xaml</DependentUpon>
     </Compile>
@@ -189,6 +192,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="PhoneCallTaskPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SavePhoneNumberTaskPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -64,7 +64,7 @@
 
                     <TextBlock Text="选择器" HorizontalAlignment="Left" VerticalAlignment="Top" FontSize="72"/>
                     <Button x:Name="btnCameraCaptureTask" Content="照相机" FontSize="36" Click="btnCameraCaptureTask_Click"/>
-
+                    <Button x:Name="btnSavePhoneNumberTask" Content="保存电话号码" FontSize="36" Click="btnSavePhoneNumberTask_Click"/>
                     
                     
                     
