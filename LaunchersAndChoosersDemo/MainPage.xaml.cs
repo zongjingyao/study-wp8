@@ -92,6 +92,11 @@ namespace LaunchersAndChoosersDemo
             NavigationService.Navigate(new Uri("/SavePhoneNumberTaskPage.xaml", UriKind.Relative));
         }
 
+        private void btnPhoneNumberChooserTask_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/PhoneNumberChooserTaskPage.xaml", UriKind.Relative));
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
