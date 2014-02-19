@@ -115,6 +115,9 @@
     <Compile Include="SmsComposeTaskPage.xaml.cs">
       <DependentUpon>SmsComposeTaskPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WebBrowserTaskPage.xaml.cs">
+      <DependentUpon>WebBrowserTaskPage.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -138,6 +141,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="SmsComposeTaskPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="WebBrowserTaskPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
