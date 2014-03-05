@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:my="clr-namespace:ConverterDemo"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -13,6 +14,11 @@
     SupportedOrientations="Portrait" Orientation="Portrait"
     shell:SystemTray.IsVisible="True">
 
+    <phone:PhoneApplicationPage.Resources>
+        <my:Clock x:Key="clock" />
+        <my:HoursToDayStringConverter x:Key="booleanToDayString" />
+    </phone:PhoneApplicationPage.Resources>
+    
     <!--LayoutRoot 是包含所有页面内容的根网格-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
@@ -41,13 +47,21 @@
 
         <!--TitlePanel 包含应用程序的名称和页标题-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="我的应用程序" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="页面名称" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="ConverterDemo" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="绑定值转换" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - 在此处放置其他内容-->
-        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" DataContext="{StaticResource clock}">
+        	<TextBlock HorizontalAlignment="Left" Margin="75,80,0,0" TextWrapping="Wrap" Text="{Binding Hour, Converter={StaticResource booleanToDayString}, Mode=OneWay}" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="75,173,0,0" TextWrapping="Wrap" Text="现在的时间是：" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="75,255,0,0" TextWrapping="Wrap" Text="{Binding Hour, Mode=OneWay}" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="75,332,0,0" TextWrapping="Wrap" Text="{Binding Minute, Mode=OneWay}" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="75,413,0,0" TextWrapping="Wrap" Text="{Binding Second, Mode=OneWay}" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="208,255,0,0" TextWrapping="Wrap" Text="小时" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="208,332,0,0" TextWrapping="Wrap" Text="分钟" VerticalAlignment="Top"/>
+        	<TextBlock HorizontalAlignment="Left" Margin="208,413,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Text="秒"/>
+            
         </Grid>
 
         <!--取消注释，以显示对齐网格，从而帮助确保
