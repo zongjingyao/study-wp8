@@ -29,7 +29,7 @@ namespace SilverlightToolkit
 
         private void btnListPicker_Click(object sender, System.Windows.RoutedEventArgs e)
         {
-        	// 在此处添加事件处理程序实现。
+            NavigationService.Navigate(new Uri("/ListPickerPage.xaml", UriKind.Relative));
         }
 
         private void btnLongListSelector_Click(object sender, System.Windows.RoutedEventArgs e)

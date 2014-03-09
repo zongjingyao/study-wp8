@@ -96,6 +96,10 @@
     <Compile Include="AutoCompleteBoxPage.xaml.cs">
       <DependentUpon>AutoCompleteBoxPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Cities.cs" />
+    <Compile Include="ListPickerPage.xaml.cs">
+      <DependentUpon>ListPickerPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
@@ -115,6 +119,10 @@
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
     <Page Include="AutoCompleteBoxPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListPickerPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
