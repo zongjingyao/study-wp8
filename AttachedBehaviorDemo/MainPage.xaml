@@ -6,6 +6,7 @@
     xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:local="clr-namespace:AttachedBehaviorDemo"
     mc:Ignorable="d"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
@@ -41,13 +42,18 @@
 
         <!--TitlePanel 包含应用程序的名称和页标题-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="我的应用程序" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="页面名称" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="AttachedBehaviorDemo" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="AttachedBehavior" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <TextBlock FontSize="50" Text="金色 Gold" local:Behavior.Brush="Gold" Margin="0,6,0,504" />
+            <TextBlock FontSize="50"  Text="绿色 Green" local:Behavior.Brush="Green" Margin="0,94,0,416" />
+            <TextBlock FontSize="50"  Text="蓝色 Blue" local:Behavior.Brush="Blue" Margin="0,184,0,339" />
+            <TextBlock FontSize="50"  Text="橙色 Orange" local:Behavior.Brush="Orange" Margin="-3,274,3,243" />
+            <TextBlock FontSize="50"  Text="紫色 Purple" local:Behavior.Brush="Purple" Margin="0,386,0,133" />
+            <TextBlock FontSize="50"  Text="橄榄色 Olive" local:Behavior.Brush="Olive" Margin="0,497,0,0" Height="110" VerticalAlignment="Top" />
         </Grid>
 
         <!--取消注释，以显示对齐网格，从而帮助确保
