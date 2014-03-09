@@ -41,13 +41,23 @@
 
         <!--TitlePanel 包含应用程序的名称和页标题-->
         <StackPanel x:Name="TitlePanel" Grid.Row="0" Margin="12,17,0,28">
-            <TextBlock Text="我的应用程序" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
-            <TextBlock Text="页面名称" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+            <TextBlock Text="SilverlightToolkit" Style="{StaticResource PhoneTextNormalStyle}" Margin="12,0"/>
+            <TextBlock Text="组件列表" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
         <!--ContentPanel - 在此处放置其他内容-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
-
+            <ListBox HorizontalAlignment="Center">
+                <StackPanel HorizontalAlignment="Center">
+                	<Button x:Name="btnAutoCompleteBox" Content="自动完成文本框" HorizontalAlignment="Center" VerticalAlignment="Top" Click="btnAutoCompleteBox_Click"/>
+                	<Button x:Name="btnListPicker" Content="列表采集器" VerticalAlignment="Top" Click="btnListPicker_Click"/>
+                	<Button x:Name="btnLongListSelector" Content="列表选择框" Click="btnLongListSelector_Click"/>
+                	<Button x:Name="btnPageTransitions" Content="页面转换" Click="btnPageTransitions_Click"/>
+                	<Button x:Name="btnPerformanceProgressBar" Content="性能进度条" Click="btnPerformanceProgressBar_Click"/>
+                	<Button x:Name="btnToggleSwitch" Content="棒形开关" Click="btnToggleSwitch_Click"/>
+                	<Button x:Name="btnWrapPanel" Content="折叠容器" Click="btnWrapPanel_Click"/>
+                </StackPanel>
+            </ListBox>
         </Grid>
 
         <!--取消注释，以显示对齐网格，从而帮助确保

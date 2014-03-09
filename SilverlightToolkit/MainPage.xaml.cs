@@ -22,6 +22,41 @@ namespace SilverlightToolkit
             //BuildLocalizedApplicationBar();
         }
 
+        private void btnAutoCompleteBox_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/AutoCompleteBoxPage.xaml", UriKind.Relative));
+        }
+
+        private void btnListPicker_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
+        private void btnLongListSelector_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
+        private void btnPageTransitions_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
+        private void btnPerformanceProgressBar_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
+        private void btnToggleSwitch_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
+        private void btnWrapPanel_Click(object sender, System.Windows.RoutedEventArgs e)
+        {
+        	// 在此处添加事件处理程序实现。
+        }
+
         // 用于生成本地化 ApplicationBar 的示例代码
         //private void BuildLocalizedApplicationBar()
         //{
